@@ -1,16 +1,33 @@
 Page 1 
 
 ```text
-Somnath Sharma
-Fifteen minutes early for my ap-
-pointment with Lieutenant General
-(retd) Surindra Nath Sharma, for-
-mer engineer-in- chief of the Indian
-Army and younger brother of late
-Major Somnath Sharma, I settle
-down to wait in the lobby of his
-19 mins left in chapter
-4%
+PART ONE: BACKGROUND
+CHAPTER 1
+INFORMATION AND NETWORK
+SECURITY CONCEPTS
+1.1 Cybersecurity, Information Security, and Network Security
+Security Objectives
+The Challenges of Information Security
+1.2 The OSI Security Architecture
+1.3 Security Attacks
+Passive Attacks
+Active Attacks
+1.4 Security Services
+Authentication
+Access Control
+Data Confidentiality
+Data Integrity
+Nonrepudiation
+Availability Service
+1.5 Security Mechanisms
+1.6 Cryptography
+Keyless Algorithms
+Single-Key Algorithms
+Two-Key Algorithms
+1.7 Network Security
+Communications Security
+Device Security
+21
 ```
 
 
@@ -18,121 +35,172 @@ down to wait in the lobby of his
 Page 2 
 
 ```text
-tastefully done up house in Defence
-Colony, New Delhi. The slim and re-
-markably fit 90-year-old Sherwood-
-ian walks in almost immediately.
-He dazzles me with his memory,
-his firm grip on names and dates,
-his British accent, his delightful
-wit and his old-world courtesy that
-includes holding doors open and
-walking me down to my car when
-the interview is done.
-When he recounts tales of his
-brother's bravery, there is pride in
-his voice; when he speaks about
-how the schoolboy Somi would
-march the kids in the neighbour-
-hood up and down, he smiles
-nostalgically. And when he tells
-me about Somi's infatuation with a
-very young girl when he last came
-to meet the family in Rawalpindi in
-1947, he chuckles like a schoolboy,
-refusing outright to tell me more.
-19 mins left in chapter
-4%
+22 CHAPTER 1/ INFORMATION AND NETWORK SECURITY CONCEPTS
+1.8 Trust and Trustworthiness
+A Trust Model
+The Trust Model and Information Security
+Establishing Trust Relationships
+1.9 Standards
+1.10 Key Terms, Review Questions, and Problems
+LEARNING OBJECTIVES
+After studying this chapter, you should be able to:
+◆ Describe the key security requirements of confidentiality, integrity, and
+availability.
+◆ Discuss the types of security threats and attacks that must be dealt with
+and give examples of the types of threats and attacks that apply to different
+categories of computer and network assets.
+◆ Provide an overview of keyless, single-key, and two-key cryptographic
+algorithms.
+Provide an overview of the main areas of network security.
+Describe a trust model for information security.
+◆ List and briefly describe key organizations involved in cryptography
+standards.
+This book focuses on two broad areas: cryptography and network security. This
+overview chapter first looks at some of the fundamental principles of security, encom-
+passing both information security and network security. These include the concepts of
+security attacks, security services, and security mechanisms. Next, the chapter intro-
+duces the two areas of cryptography and network security. Finally, the concepts of trust
+and trustworthiness are examined.
 ```
 
 
 
 Page 3 
 
-'We don't discuss ladies,' he says
-gallantly. I am disarmed with his
-charm, but what impresses me
-most is the lucid manner in which
-he recounts the Battle of Badgam
-and makes Somnath Sharma and
-the '47 war with Pakistan come
-alive in front of my eyes.
-
-Badgam, Jammu and Kashmir
-3 November 1947
-
-Resting his plastered left arm on the
-edge of the trench, Maj Somnath
-Sharma raises his head and squints at
-the sun; it has moved west but there
-are still a few hours of daylight left.
-He has to move his company soon and
-if they make good time, they can be
-back at the Srinagar airfield by night.
-It has been a tense and gruelling
-18 mins left in chapter
-4%
+```text
+1.1 / CYBERSECURITY, INFORMATION SECURITY, AND NETWORK SECURITY 23
+1.1 CYBERSECURITY, INFORMATION SECURITY,
+AND NETWORK SECURITY
+It would be useful to start this chapter with a definition of the terms cybersecurity, infor-
+mation security, and network security. A reasonably comprehensive definition of cyber-
+security is:
+Cybersecurity is the protection of information that is stored, transmitted, and pro-
+cessed in a networked system of computers, other digital devices, and network devices
+and transmission lines, including the Internet. Protection encompasses confidentiality,
+integrity, availability, authenticity, and accountability. Methods of protection include
+organizational policies and procedures, as well as technical means such as encryption
+and secure communications protocols.
+As subsets of cybersecurity, we can define the following:
+■ Information security: This term refers to preservation of confidentiality,
+integrity, and availability of information. In addition, other properties, such
+as authenticity, accountability, nonrepudiation, and reliability can also be
+involved.
+■ Network security: This term refers to protection of networks and their service
+from unauthorized modification, destruction, or disclosure, and provision of
+assurance that the network performs its critical functions correctly and there
+are no harmful side effects.
+Cybersecurity encompasses information security, with respect to electronic
+information, and network security. Information security also is concerned with phys-
+ical (e.g., paper-based) information. However, in practice, the terms cybersecurity
+and information security are often used interchangeably.
+Security Objectives
+The cybersecurity definition introduces three key objectives that are at the heart of
+information and network security:
+■ Confidentiality: This term covers two related concepts:
+Data¹ confidentiality: Assures that private or confidential information is
+not made available or disclosed to unauthorized individuals.
+1We can define information as communication or representation of knowledge such as facts, data, or
+opinions in any medium or form, including textual, numerical, graphic, cartographic, narrative, or au-
+diovisual; and data as information with a specific representation that can be produced, processed, or
+stored by a computer. Security literature typically does not make much of a distinction, nor does this
+book.
+```
 
 
 
 Page 4 
 
-morning, but now he is feeling quite
-relaxed.
-At first light that day, a fighting
-patrol comprising A and D Companies
-of 4 Kumaon (under Somi) and one
-company of 1 Para Kumaon (under
-Captain Ronald Wood) had been sent
-to Badgam after intelligence reports
-had warned that a 1000-strong
-lashkar of Pathans, led by Pakistan
-Army regulars, was heading towards
-Srinagar. Their aim, the reports had
-said, was to take over Srinagar air-
-field and thus handicap the Army by
-cutting off their supplies. The fighting
-patrol's job had been to search for the
-raiders and engage them at Badgam,
-a small village three to four miles
-from the Srinagar airfield.
-Early morning, Sharma had
-reported that his company was posi-
-tioned on a hillock west of the village
-and that they had dug trenches there.
-17 mins left in chapter
-4%
+```text
+24 CHAPTER 1/ INFORMATION AND NETWORK SECURITY CONCEPTS
+– Privacy: Assures that individuals control or influence what information
+related to them may be collected and stored and by whom and to whom
+that information may be disclosed.
+■Integrity: This term covers two related concepts:
+– Data integrity: Assures that data (both stored and in transmitted packets)
+and programs are changed only in a specified and authorized manner. This
+concept also encompasses data authenticity, which means that a digital object
+is indeed what it claims to be or what it is claimed to be, and nonrepudiation,
+which is assurance that the sender of information is provided with proof of
+delivery and the recipient is provided with proof of the sender's identity, so
+neither can later deny having processed the information.
+– System integrity: Assures that a system performs its intended function in
+an unimpaired manner, free from deliberate or inadvertent unauthorized
+manipulation of the system.
+■Availability: Assures that systems work promptly and service is not denied to
+authorized users.
+These three concepts form what is often referred to as the CIA triad. The three
+concepts embody the fundamental security objectives for both data and for informa-
+tion and computing services. For example, the NIST standard FIPS 199 (Standards
+for Security Categorization of Federal Information and Information Systems) lists
+confidentiality, integrity, and availability as the three security objectives for infor-
+mation and for information systems. FIPS 199 provides a useful characterization
+of these three objectives in terms of requirements and the definition of a loss of
+security in each category:
+■Confidentiality: Preserving authorized restrictions on information access
+and disclosure, including means for protecting personal privacy and propri-
+etary information. A loss of confidentiality is the unauthorized disclosure of
+information.
+■Integrity: Guarding against improper information modification or destruc-
+tion, including ensuring information nonrepudiation and authenticity. A loss
+of integrity is the unauthorized modification or destruction of information.
+■Availability: Ensuring timely and reliable access to and use of information.
+A loss of availability is the disruption of access to or use of information or an
+information system.
+Although the use of the CIA triad to define security objectives is well estab-
+lished, some in the security field feel that additional concepts are needed to pres-
+ent a complete picture (Figure 1.1). Two of the most commonly mentioned are as
+follows:
+■ Authenticity: The property of being genuine and being able to be verified and
+trusted; confidence in the validity of a transmission, a message, or message
+originator. This means verifying that users are who they say they are and that
+each input arriving at the system came from a trusted source.
+```
 
 
 
 Page 5 
 
 ```text
-1 Para Kumaon had established
-themselves southeast of the village
-and had reported that the village
-was quiet and peaceful. Sharma had
-also reported that the villagers had
-been going about their chores quietly
-though they looked scared. He has
-also noticed that some of them were
-clustered in a nala where they seemed
-to be taking shelter. Since Badgam
-appeared peaceful, 1 Para Kumaon
-was ordered to ‘circle east and search;
-and then return to the airfield after
-making contact with 1 Punjab'. They
-did so, and were back in Srinagar by 1
-p. m.
-Since Badgam is quiet, Sharma is
-also ordered to start pulling his com-
-panies out. At 2 p. m. he reports that
-A Company, which had been ordered
-to circle to the west, had done so and
-was also on its way to the airfield.
-Somi plans to keep D Company in
-16 mins left in chapter
-5%
+1.1 / CYBERSECURITY, INFORMATION SECURITY, AND NETWORK SECURITY 25
+Confidentiality
+(plus privacy)
+Accountability
+(plus dat a authenticity,
+Integrity
+non-repudiation)
+Information
+and Network
+Security
+Authenticity
+Availability
+Figure 1.1 Essential Information and Network Security Objectives
+■ Accountability: The security goal that generates the requirement for actions
+of an entity to be traced uniquely to that entity. This supports nonrepudiation,
+deterrence, fault isolation, intrusion detection and prevention, and after-action
+recovery and legal action. Because truly secure systems are not yet an achiev-
+able goal, we must be able to trace a security breach to a responsible party.
+Systems must keep records of their activities to permit later forensic analysis
+to trace security breaches or to aid in transaction disputes.
+The Challenges of Information Security
+Information and network security are both fascinating and complex. Some of the
+reasons follow:
+1. Security is not as simple as it might first appear to the novice. The require-
+ments seem to be straightforward; indeed, most of the major requirements for
+security services can be given self-explanatory, one-word labels: confidential-
+ity, authentication, nonrepudiation, and integrity. But the mechanisms used to
+meet those requirements can be quite complex, and understanding them may
+involve rather subtle reasoning.
+2. In developing a particular security mechanism or algorithm, one must always
+consider potential attacks on those security features. In many cases, successful
+attacks are designed by looking at the problem in a completely different way,
+therefore exploiting an unexpected weakness in the mechanism.
+3. Because of point 2, the procedures used to provide particular services are
+often counterintuitive. Typically, a security mechanism is complex, and it is not
+obvious from the statement of a particular requirement that such elaborate
+measures are needed. It is only when the various aspects of the threat are con-
+sidered that elaborate security mechanisms make sense.
+4. Having designed various security mechanisms, it is necessary to decide where
+to use them. This is true both in terms of physical placement (e.g., at what points
 ```
 
 
@@ -140,30 +208,48 @@ Somi plans to keep D Company in
 Page 6 
 
 ```text
-Badgam till late evening and then
-withdraw to the airfield. His decision
-is supported by Brig. L. P. Sen, DSO.
-The two know each other well from
-battles in the Arakan in 1944-45.
-The soldiers are just biding time since
-there are only a few hours to go.
-
-The general stops for a breather and
-a sip of the lemonade that has ap-
-peared by our sides and then shakes
-his head gravely. ‘The people Somi
-had mistaken for villagers in the
-nala were in fact Pathans dressed
-as Kashmiri locals with weapons
-hidden under their loose chogas, ‘
-he grimaces.
-The lashkar was arriving in
-Badgam in bits and pieces to conceal
-their movement and it was led by a
-Pakistani major, who was hatching
-a crafty plan even as he watched
-15 mins left in chapter
-5%
+26 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+in a network are certain security mechanisms needed) and in a logical sense
+[e.g., at what layer or layers of an architecture such as TCP/IP (Transmission
+Control Protocol/Internet Protocol) should mechanisms be placed].
+5. Security mechanisms typically involve more than a particular algorithm or
+protocol. They also require that participants be in possession of some secret
+information (e.g., an encryption key), which raises questions about the cre-
+ation, distribution, and protection of that secret information. There also may
+be a reliance on communications protocols whose behavior may complicate
+the task of developing the security mechanism. For example, if the proper
+functioning of the security mechanism requires setting time limits on the tran-
+sit time of a message from sender to receiver, then any protocol or network
+that introduces variable, unpredictable delays may render such time limits
+meaningless.
+6. Information and network security are essentially a battle of wits between a
+perpetrator who tries to find holes and the designer or administrator who tries
+to close them. The great advantage that the attacker has is that he or she need
+only find a single weakness, while the designer must find and eliminate all
+weaknesses to achieve perfect security.
+7. There is a natural tendency on the part of users and system managers to per-
+ceive little benefit from security investment until a security failure occurs.
+8. Security requires regular, even constant, monitoring, and this is difficult in
+today's short-term, overloaded environment.
+9. Security is still too often an afterthought to be incorporated into a system after
+the design is complete rather than being an integral part of the design process.
+10. Many users and even security administrators view strong security as an imped-
+iment to efficient and user-friendly operation of an information system or use
+of information.
+The difficulties just enumerated will be encountered in numerous ways as we
+examine the various security threats and mechanisms throughout this book.
+1.2 THE OSI SECURITY ARCHITECTURE
+To assess effectively the security needs of an organization and to evaluate and
+choose various security products and policies, the manager responsible for security
+needs some systematic way of defining the requirements for security and character-
+izing the approaches to satisfying those requirements. This is difficult enough in a
+centralized data processing environment; with the use of local and wide area net-
+works, the problems are compounded.
+ITU-T Recommendation X.800, Security Architecture for OSI, defines
+such a systematic approach. The open systems interconnection (OSI) security
+architecture is useful to managers as a way of organizing the task of providing
+security. Furthermore, because this architecture was developed as an interna-
+tional standard, computer and communications vendors have developed security
 ```
 
 
@@ -171,31 +257,48 @@ a crafty plan even as he watched
 Page 7 
 
 ```text
-the soldiers of the Indian Army
-patrolling the village. He had asked
-his men to mix with the locals and
-wait for the rest of the Pathans,
-who were quietly making their way
-to Badgam after slowly trooping
-in through the gap between the
-ranges at Gulmarg. He planned to
-attack Badgam when they reached a
-count of around 1000 men and then
-advance to the Srinagar airfield.
-Pakistan's plan was to attack the air-
-field, cut off the Army's access and
-then takeover Jammu and Kashmir.
-‘It was a great plan, ‘the general
-acknowledges grudgingly.
-Around 2 p. m., well after A
-Company left Badgam, the vil-
-lagers grouped in the nala began
-to disperse. While Sharma and his
-men thought they were returning
-to their homes, they were quietly
-positioning themselves around D
-14 mins left in chapter
-5%
+1.3 / SECURITY ATTACKS 27
+features for their products and services that relate to this structured definition of
+services and mechanisms.
+For our purposes, the OSI security architecture provides a useful, if abstract,
+overview of many of the concepts that this book deals with. The OSI security archi-
+tecture focuses on security attacks, mechanisms, and services. These can be defined
+briefly as:
+■ Security attack: Any action that compromises the security of information
+owned by an organization.
+■ Security mechanism: A process (or a device incorporating such a process) that
+is designed to detect, prevent, or recover from a security attack.
+■ Security service: A processing or communication service that enhances the
+security of the data processing systems and the information transfers of an
+organization. The services are intended to counter security attacks, and they
+make use of one or more security mechanisms to provide the service.
+In the literature, the terms threat and attack are commonly used, with the
+following meanings:
+■ Threat: Any circumstance or event with the potential to adversely impact
+organizational operations (including mission, functions, image, or reputation),
+organizational assets, individuals, other organizations, or the Nation through
+an information system via unauthorized access, destruction, disclosure, modifi-
+cation of information, and/or denial of service.
+■ Attack: Any kind of malicious activity that attempts to collect, disrupt, deny,
+degrade, or destroy information system resources or the information itself.
+The following three sections provide an overview of the concepts of attacks,
+services, and mechanisms. The key concepts that are covered are summarized in
+Figure 1.2.
+
+1.3 SECURITY ATTACKS
+A useful means of classifying security attacks, used both in X.800, is in terms of
+passive attacks and active attacks (Figure 1.2a). A passive attack attempts to learn or
+make use of information from the system but does not affect system resources. An
+active attack attempts to alter system resources or affect their operation.
+
+Passive Attacks
+Passive attacks are in the nature of eavesdropping on, or monitoring of, transmis-
+sions. The goal of the attacker is to obtain information that is being transmitted. Two
+types of passive attacks are the release of message contents and traffic analysis.
+The release of message contents is easily understood. A telephone conver-
+sation, an electronic mail message, and a transferred file may contain sensitive or
+confidential information. We would like to prevent an opponent from learning the
+contents of these transmissions.
 ```
 
 
@@ -203,30 +306,60 @@ positioning themselves around D
 Page 8 
 
 ```text
-Company. The Pakistani major had
-decided not to wait beyond after-
-noon and as soon as he had about
-700 men, he launched his attack.
-Sharma and his company, consist-
-ing of about 90 men, were the only
-ones left to fight the raiders. They
-were outnumbered seven to one.
-
-Wrinkling his forehead in an effort
-to remember, Lt Gen Sharma says
-it was around 2. 30 p. m. that Somi
-and his men were taken by surprise
-when gunfire started coming at
-them from the village. Soon, they
-were receiving machine-gun fire as
-well. Somi reported to his brigade
-commander that his position was
-under attack. He added that he
-was apprehensive about returning
-fire in the direction of the village
-because he could hurt innocent peo-
-14 mins left in chapter
-5%
+28 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+Passive Attacks
+Release of
+message
+contents
+Traffic
+analysis
+Active Attacks
+Replay
+Data
+modification
+Masquerade
+Denial of
+service
+(a) Attacks
+Authentication
+Access
+control
+Data
+confidentiality
+Data
+integrity
+Nonrepudiation
+Availability
+service
+(b) Services
+Cryptographic
+algorithms
+Data
+integrity
+Digital
+signature
+Authentication
+exchange
+Traffic padding
+Routing
+control
+(c) Mechanisms
+Notarization
+Access
+control
+Figure 1.2 Key Concepts in Security
+A second type of passive attack, traffic analysis, is subtler. Suppose that we
+had a way of masking the contents of messages or other information traffic so that
+opponents, even if they captured the message, could not extract the information
+from the message. The common technique for masking contents is encryption. If we
+had encryption protection in place, an opponent might still be able to observe the
+pattern of these messages. The opponent could determine the location and identity
+of communicating hosts and could observe the frequency and length of messages
+being exchanged. This information might be useful in guessing the nature of the
+communication that was taking place.
+Passive attacks are very difficult to detect because they do not involve any
+alteration of the data. Typically, the message traffic is sent and received in an appar-
+ently normal fashion and neither the sender nor receiver is aware that a third party
 ```
 
 
@@ -234,31 +367,52 @@ because he could hurt innocent peo-
 Page 9 
 
 ```text
-ple, including women and children.
-By then, the raiders had started
-coming up in large numbers from a
-depression in the west.
-‘There were hundreds of
-them, and they started targeting
-Somi's company with mortar and
-automatic fire,' says Lt Gen Sharma.
-'Since the Pathans were not trained
-soldiers, every 100 men were com-
-manded by a Viceroy's Commis-
-sioned Officer (VCO) while every 10
-men had a regular Pakistani Army
-soldier with them who inspired
-them to fight. '
-Lt Gen Sharma says he heard from
-soldiers of 4 Kumaon who returned
-alive from the battle how Somi
-encouraged his men to retaliate
-and, completely unmindful of his
-own safety, rushed from one trench
-to another urging them to fight
-back bravely. Such was the grit and
-13 mins left in chapter
-5%
+1.3 / SECURITY ATTACKS 29
+has read the messages or observed the traffic pattern. However, it is feasible to pre-
+vent the success of these attacks, usually by means of encryption. Thus, the emphasis
+in dealing with passive attacks is on prevention rather than detection.
+Active Attacks
+Active attacks involve some modification of the data stream or the creation of a
+false stream and can be subdivided into four categories: replay, masquerade, modifi-
+cation of messages, and denial of service.
+A masquerade takes place when one entity pretends to be a different entity.
+A masquerade attack usually includes one of the other forms of active attack. For
+example, authentication sequences can be captured and replayed after a valid
+authentication sequence has taken place, thus enabling an authorized entity with
+few privileges to obtain extra privileges by impersonating an entity that has those
+privileges.
+Replay involves the passive capture of a data unit and its subsequent retrans-
+mission to produce an unauthorized effect.
+Data modification simply means that some portion of a legitimate message
+is altered, or that messages are delayed or reordered, to produce an unauthorized
+effect. For example, a message stating, "Allow John Smith to read confidential file
+accounts" is modified to say, "Allow Fred Brown to read confidential file accounts."
+The denial of service prevents or inhibits the normal use or management of
+communication facilities. This attack may have a specific target; for example, an
+entity may suppress all messages directed to a particular destination (e.g., the secu-
+rity audit service). Another form of service denial is the disruption of an entire net-
+work, either by disabling the network or by overloading it with messages so as to
+degrade performance.
+Active attacks present the opposite characteristics of passive attacks. Whereas
+passive attacks are difficult to detect, measures are available to prevent their success.
+On the other hand, it is quite difficult to prevent active attacks absolutely, because
+to do so would require physical protection of all communication facilities and paths
+at all times. Instead, the goal is to detect them and to recover from any disruption
+or delays caused by them. Because the detection has a deterrent effect, it may also
+contribute to prevention.
+Figure 1.3 illustrates the types of attacks in the context of a client/server inter-
+action. A passive attack (Figure 1.3b) does not disturb the information flow between
+the client and server, but is able to observe that flow.
+A masquerade can take the form of a man-in-the-middle attack (Figure 1.3c).
+In this type of attack, the attacker intercepts masquerades as the client to the server
+and as the server to the client. We see specific applications of this attack in defeat-
+ing key exchange and distribution protocols (Chapters 10 and 14) and in message
+authentication protocols (Chapter 11). More generally, it can be used to imperson-
+ate the two ends of a legitimate communication. Another form of masquerade is
+illustrated in Figure 1.3d. Here, an attacker is able to access server resources by mas-
+querading as an authorized user.
+Data modification may involve a man-in-the middle attack, in which the
+attacker selectively modifies communicated data between a client and server
 ```
 
 
@@ -266,445 +420,717 @@ back bravely. Such was the grit and
 Page 10 
 
 ```text
-determination of the men that the
-first few attacks, which came from
-different directions, were success-
-fully repulsed.
-The Pathans, however, drew
-strength from sheer numbers and
-began to increase the pressure.
-Soon they had surrounded D Com-
-pany from three sides and started
-climbing up the hillock where
-the trenches were. They came in
-hordes, brandishing automatics
-and shouting Allah ho Akbar!'
-Somi knew he was outnumbered.
-He called the brigade commander
-and asked for ammunition and
-reinforcements. He was told that 1
-Punjab was being sent for their sup-
-port but Somi realized they would
-take time to get there since they had
-to move in battle formation. He also
-understood how important it was to
-hold back the enemy till reinforce-
-12 mins left in chapter
-5%
+30 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+Client
+Client
+Attacker
+Client
+(a) Normal flow
+(b) Passive attack (eavesdrop,
+traffic analysis)
+Attacker
+Server
+Client
+Server
+Client
+Server
+Attacker
+(c) Active attack (masquerade,
+data modification)
+Attacker
+Server
+Server
+(d) Active attack (masquerade, data
+modification, denial of service)
+Figure 1.3 Security Attacks
+(e) Active attack (replay)
+(Figure 1.3c). Another form of data modification attack is the modification of data
+residing on a serve or other system after an attacker gains unauthorized access
+(Figure 1.3d).
+Figure 1.3e illustrates the replay attack. As in a passive attack, the attacker
+does not disturb the information flow between client and server, but does capture
+client message. The attacker can then subsequently replay any client message to the
+server.
+Figure 1.3d also illustrates denial of service in the context of a client/server
+environment. The denial of service can take two forms: (1) flooding the server with
+an overwhelming amount of data; and (2) triggering some action on the server that
+consumes substantial computing resources.
+1.4 SECURITY SERVICES
+A security service is a capability that supports one or more of the security require-
+ments (confidentiality, integrity, availability, authenticity, and accountability). Security
+services implement security policies and are implemented by security mechanisms.
 ```
 
 
 
 Page 11 
 
-ments could be sent to close the
-gap leading to Srinagar. If that was
-not done, the raiders could advance
-right up to the airfield and take over
-Srinagar.
-Somi decided to hold back tena-
-ciously and urged his men to fight
-to the last. It is to their credit that
-they did, despite the fact that they
-were completely outnumbered and
-their. 303 rifles were no match for
-the enemy's medium machine guns.
-'Somi knew his company would
-not be able to hold out for long but
-he did not let his men lose confi-
-dence. With complete disregard for
-his own safety, he rushed across
-the open ground in full view of the
-enemy and went about encouraging
-his men. When the heavy casualties
-started affecting the men manning
-the light machine guns, Somi him-
-self went around, using his good
-11 mins left in chapter
-6%
+```text
+1.4 / SECURITY SERVICES 31
+The most important security services are shown in Figure 1.2b. We look at each
+category in turn.2
+Authentication
+The authentication service is concerned with assuring that a communication is
+authentic. In the case of a single message, such as a warning or alarm signal, the
+function of the authentication service is to assure the recipient that the message is
+from the source that it claims to be from. In the case of an ongoing interaction, such
+as the connection of a client to a server, two aspects are involved. First, at the time
+of connection initiation, the service assures that the two entities are authentic, that
+is, that each is the entity that it claims to be. Second, the service must assure that the
+connection is not interfered with in such a way that a third party can masquerade as
+one of the two legitimate parties for the purposes of unauthorized transmission or
+reception.
+Two specific authentication services are defined in X.800:
+■Peer entity authentication: Provides for the corroboration of the identity of a
+peer entity in an association. Two entities are considered peers if they imple-
+ment the same protocol in different systems; for example, two TCP modules in
+two communicating systems. Peer entity authentication is provided for use at
+the establishment of, or at times during the data transfer phase of, a connec-
+tion. It attempts to provide confidence that an entity is not performing either a
+masquerade or an unauthorized replay of a previous connection.
+Data origin authentication: Provides for the corroboration of the source of
+a data unit. It does not provide protection against the duplication or modifi-
+cation of data units. This type of service supports applications like electronic
+mail, where there are no ongoing interactions between the communicating
+entities.
+Access Control
+In the context of network security, access control is the ability to limit and control
+the access to host systems and applications via communications links. To achieve
+this, each entity trying to gain access must first be identified, or authenticated, so
+that access rights can be tailored to the individual.
+Data Confidentiality
+Confidentiality is the protection of transmitted data from passive attacks. With
+respect to the content of a data transmission, several levels of protection can be
+identified. The broadest service protects all user data transmitted between two users
+2There is no universal agreement about many of the terms used in the security literature. For example,
+the term integrity is sometimes used to refer to all aspects of information security. The term authentication
+is sometimes used to refer both to verification of identity and to the various functions listed under
+integrity in this chapter. Our usage here agrees with X.800.
+```
 
 
 
 Page 12 
 
 ```text
-hand-his left arm was in plaster
--to fill magazines and hand these
-over to the light machine gunners.
-He would tell them when and where
-to fire.
-"Idhar maro, udhar maro," he
-would say, and the battle raged for
-almost five hours,' the general tells
-me. ‘That was precious time for the
-Indian Army, since the raiders were
-being delayed and they were getting
-time to plug the gaps as they built
-up strength with Indian Air Force
-planes flying in more troops.'
-Eventually, the men started
-running out of ammunition. When
-Somi informed brigade headquar-
-ters (HQ) about this, he was asked to
-pull back. He refused outright. 'The
-enemy is only 50 yards from us. We
-are heavily outnumbered. We are
-under devastating fire. I shall not
-withdraw an inch but will fight to
-10 mins left in chapter
-6%
+32 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+over a period of time. For example, when a TCP connection is set up between two
+systems, this broad protection prevents the release of any user data transmitted over
+the TCP connection. Narrower forms of this service can also be defined, including
+the protection of a single message or even specific fields within a message. These
+refinements are less useful than the broad approach and may even be more complex
+and expensive to implement.
+The other aspect of confidentiality is the protection of traffic flow from analy-
+sis. This requires that an attacker not be able to observe the source and destination,
+frequency, length, or other characteristics of the traffic on a communications facility.
+Data Integrity
+As with confidentiality, integrity can apply to a stream of messages, a single mes-
+sage, or selected fields within a message. Again, the most useful and straightforward
+approach is total stream protection.
+A connection-oriented integrity service, one that deals with a stream of mes-
+sages, assures that messages are received as sent with no duplication, insertion,
+modification, reordering, or replays. The destruction of data is also covered under
+this service. Thus, the connection-oriented integrity service addresses both message
+stream modification and denial of service. On the other hand, a connectionless integ-
+rity service, one that deals with individual messages without regard to any larger
+context, generally provides protection against message modification only.
+We can make a distinction between service with and without recovery. Because
+the integrity service relates to active attacks, we are concerned with detection rather
+than prevention. If a violation of integrity is detected, then the service may simply
+report this violation, and some other portion of software or human intervention is
+required to recover from the violation. Alternatively, there are mechanisms avail-
+able to recover from the loss of integrity of data, as we will review subsequently. The
+incorporation of automated recovery mechanisms is, in general, the more attractive
+alternative.
+Nonrepudiation
+Nonrepudiation prevents either sender or receiver from denying a transmitted mes-
+sage. Thus, when a message is sent, the receiver can prove that the alleged sender in
+fact sent the message. Similarly, when a message is received, the sender can prove
+that the alleged receiver in fact received the message.
+Availability Service
+Availability is the property of a system, or a system resource being accessible and
+usable upon demand by an authorized system entity, according to performance
+specifications for the system (i.e., a system is available if it provides services accord-
+ing to the system design whenever users request them). A variety of attacks can
+result in the loss of or reduction in availability. Some of these attacks are amenable
+to automated countermeasures, such as authentication and encryption, whereas oth-
+ers require some sort of physical action to prevent or recover from loss of availabil-
+ity of elements of a distributed system.
 ```
 
 
 
 Page 13 
 
-the last man and the last round, '
-was his last message to the HQ.
-Just a few minutes later, while he
-was crouched in a trench next to
-the Bren gunner, helping him load
-the gun, a mortar shell landed on
-the open ammunition box next to
-them. An eardrum-shattering blast
-rent the air. ‘It blew up Somi, his
-sahayak (an officer's helper or man
-Friday who looks after his uniform
-and turnout), the machine gun-
-ner and a JCO, who was standing
-nearby, 'recounts Lt Gen Sharma,
-his voice gentle.
-For Somi, who had insisted upon
-leading his company to Kashmir
-despite having his arm in plaster, it
-was all over. But it is considered a
-credit to his leadership that the men
-under his command kept his word.
-The non-commissioned officers
-(NCOs) of the company decided to
-9 mins left in chapter
-6%
+1.6 / CRYPTOGRAPHY 33
+X.800 treats availability as a property to be associated with various security
+services. However, it makes sense to call out specifically an availability service. An
+availability service is one that protects a system to ensure its availability. This service
+addresses the security concerns raised by denial-of-service attacks. It depends on
+proper management and control of system resources and thus depends on access
+control service and other security services.
+1.5 SECURITY MECHANISMS
+Figure 1.2c lists the most important security mechanisms discussed in this book.
+These mechanisms will be covered in the appropriate places in the book. So, we do
+not elaborate now, except to provide the following brief definitions.
+■ Cryptographic algorithms: We can distinguish between reversible crypto-
+graphic mechanisms and irreversible cryptographic mechanisms. A reversible
+cryptographic mechanism is simply an encryption algorithm that allows data
+to be encrypted and subsequently decrypted. Irreversible cryptographic mech-
+anisms include hash algorithms and message authentication codes, which are
+used in digital signature and message authentication applications.
+■Data integrity: This category covers a variety of mechanisms used to assure the
+integrity of a data unit or stream of data units.
+■Digital signature: Data appended to, or a cryptographic transformation of,
+a data unit that allows a recipient of the data unit to prove the source and
+integrity of the data unit and protect against forgery.
+■ Authentication exchange: A mechanism intended to ensure the identity of an
+entity by means of information exchange.
+■ Traffic padding: The insertion of bits into gaps in a data stream to frustrate
+traffic analysis attempts.
+■ Routing control: Enables selection of particular physically or logically secure
+routes for certain data and allows routing changes, especially when a breach of
+security is suspected.
+■ Notarization: The use of a trusted third party to assure certain properties of a
+data exchange.
+■ Access control: A variety of mechanisms that enforce access rights to
+resources.
+1.6 CRYPTOGRAPHY
+Cryptography is a branch of mathematics that deals with the transformation of
+data. Cryptographic algorithms are used in many ways in information security and
+network security. Cryptography is an essential component in the secure storage
+and transmission of data, and in the secure interaction between parties. Parts Two
+through Five are devoted to this topic. Here we provide a very brief overview.
 
 
 
 Page 14 
 
-fight on, and they managed to hold
-back the raiders for another hour
-even after Somi had died.
-In fact, as the ammunition
-became desperately short, another
-hero emerged. Lt Gen Sharma talks
-with great respect about Lance Naik
-Balwant Singh of D Company, who
-took a brave initiative when most
-of the soldiers were left with just
-one round or two. ‘He asked them
-to collect whatever rounds were left
-with them and hand those over to
-him. He then loaded his gun with
-these two or three magazines and
-told the rest of the men to retreat
-while he held up the enemy. “There
-is no point in everybody dying," he
-said. "I will hold them back for the
-few minutes you need to disappear
-into the fields."
-'So he and three others stayed
-back to battle the raiders while the
-8 mins left in chapter
-6%
+```text
+34 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+                                   Keyless                   Single-Key                    Two-Key
+                               Cryptographic                Block cipher                 Asymmetric
+                               hash function                symmetric                  encryption
+                                                           encryption
+                                     Pseudo-                  Stream cipher                    Digital
+                               random number                 symmetric                   signature
+                               generator                  encryption
+                                                           Message                            Key
+                                                     authentication                     exchange
+                                                              code
+                                                                                          User
+                                                                                  authentication
+                               Figure 1.4 Cryptographic Algorithms
+        Cryptographic algorithms can be divided into three categories (Figure 1.4):
+        ■ Keyless: Do not use any keys during cryptographic transformations.
+        Single-key: The result of a transformation is a function of the input data and a
+          single key, known as a secret key.
+        ■ Two-key: At various stages of the calculation, two different but related keys
+          are used, referred to as a private key and a public key.
+        Keyless Algorithms
+        Keyless algorithms are deterministic functions that have certain properties useful
+        for cryptography.
+            One important type of keyless algorithm is the cryptographic hash function. A
+        hash function turns a variable amount of text into a small, fixed-length value called
+        a hash value, hash code, or digest. A cryptographic hash function is one that has
+        additional properties that make it useful as part of another cryptographic algorithm,
+        such as a message authentication code or a digital signature.
+              A pseudorandom number generator produces a deterministic sequence
+        of numbers or bits that has the appearance of being a truly random sequence.
+        Although the sequence appears to lack any definite pattern, it will repeat after a cer-
+        tain sequence length. Nevertheless, for some cryptographic purposes this apparently
+        random sequence is sufficient.
+        Single-Key Algorithms
+        Single-key cryptographic algorithms depend on the use of a secret key. This key may
+        be known to a single user; for example, this is the case for protecting stored data that
+        is only going to be accessed by the data creator. Commonly, two parties share the
+```
 
 
 
 Page 15 
 
 ```text
-rest left the hillock from the back.
-Shooting the last of their rounds,
-these four bravehearts got out of
-their trenches and charged at the
-enemy. They were killed but they
-helped their comrades survive,' re-
-calls the general.
-Overall, the brave action of D
-Company resulted in the raiders
-being delayed by close to six hours
-by which time the Indian Army
-had managed to get into position
-and block the enemy advance to
-Srinagar airfield. As aircrafts con-
-tinued to fly in with more and more
-soldiers, the airfield defence had
-become strong enough to stop any
-attack.
-On the morning of 5 November,
-Badgam was counterattacked by
-the Indian Army and captured. The
-bodies of 300 raiders were counted,
-which proved just how ruthless the
-8 mins left in chapter
-6%
+1.6 / CRYPTOGRAPHY 35
+secret key so that communication between the two parties is protected. For certain
+applications, more than two users may share the same secret key. In this last case, the
+algorithm protects data from those outside the group who share the key.
+Encryption algorithms that use a single key are referred to as symmetric
+encryption algorithms. With symmetric encryption, an encryption algorithm takes
+as input some data to be protected and a secret key and produces an unintelligi-
+ble transformation on that data. A corresponding decryption algorithm takes the
+transformed data and the same secret key and recovers the original data. Symmetric
+encryption takes the following forms:
+■ Block cipher: A block cipher operates on data as a sequence of blocks. A typi-
+cal block size is 128 bits. In most versions of the block cipher, known as modes
+of operation, the transformation depends not only on the current data block
+and the secret key but also on the content of preceding blocks.
+■ Stream cipher: A stream cipher operates on data as a sequence of bits. Typically,
+an exclusive-OR operation is used to produce a bit-by-bit transformation. As
+with the block cipher, the transformation depends on a secret key.
+Another form of single-key cryptographic algorithm is the message authen-
+tication code (MAC). A MAC is a data element associated with a data block or
+message. The MAC is generated by a cryptographic transformation involving a
+secret key and, typically, a cryptographic hash function of the message. The MAC
+is designed so that someone in possession of the secret key can verify the integ-
+rity of the message. Thus, the MAC algorithm takes as input a message and secret
+key and produces the MAC. The recipient of the message plus the MAC can per-
+form the same calculation on the message; if the calculated MAC matches the
+MAC accompanying the message, this provides assurance that the message has
+not been altered.
+Two-Key Algorithms
+Two-key algorithms involve the use of two related keys. A private key is known only
+to a single user or entity, whereas the corresponding public key is made available
+to a number of users. Encryption algorithms that use two keys are referred to as
+asymmetric encryption algorithms. Asymmetric encryption can work in two ways:
+1. An encryption algorithm takes as input some data to be protected and the
+private key and produces an unintelligible transformation on that data. A
+corresponding decryption algorithm takes the transformed data and the
+corresponding public key and recovers the original data. In this case, only the
+possessor of the private key can have performed the encryption and any pos-
+sessor of the public key can perform the decryption.
+2. An encryption algorithm takes as input some data to be protected and a
+public key and produces an unintelligible transformation on that data. A cor-
+responding decryption algorithm takes the transformed data and the corre-
+sponding private key and recovers the original data. In this case, any possessor
+of the public key can have performed the encryption and only the possessor of
+the private key can perform the decryption.
 ```
 
 
 
 Page 16 
 
-fight had been. The retaliatory fire
-had been so harsh that the Pathans
-had not been able to pick up their
-dead. Since they were not trained
-soldiers, they were not used to
-losing men in such a big way. The
-big losses broke their resolve and
-they started pulling back. When the
-Army took over Badgam, they found
-the Pakistanis retreating. ‘When
-a man's will is broken, he cannot
-fight, ‘ says Lt Gen Sharma.
-In the battle of Badgam, 4 Ku-
-maon lost Maj Somnath Sharma,
-Subedar Prem Singh Mehta and
-20 other ranks. Twenty-six people
-were wounded in the operation. For
-his gallantry, tenacious defence and
-exemplary leadership that inspired
-his men to fight the enemy, in spite
-of being outnumbered seven to one,
-Maj Somnath Sharma was awarded
-the Param Vir Chakra (PVC) posthu-
-7 mins left in chapter
-7%
+```text
+36 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+Asymmetric encryption has a variety of applications. One of the most impor-
+tant is the digital signature algorithm. A digital signature is a value computed with
+a cryptographic algorithm and associated with a data object in such a way that any
+recipient of the data can use the signature to verify the data's origin and integrity.
+Typically, the signer of a data object uses the signer's private key to generate the
+signature, and anyone in possession of the corresponding public key can verify that
+validity of the signature.
+Asymmetric algorithms can also be used in two other important applica-
+tions. Key exchange is the process of securely distributing a symmetric key to
+two or more parties. User authentication is the process of authenticating that a
+user attempting to access an application or service is genuine and, similarly, that
+the application or service is genuine. These concepts are explained in detail in
+subsequent chapters.
+1.7 NETWORK SECURITY
+Network security is a broad term that encompasses security of the communications
+pathways of the network and the security of network devices and devices attached
+to the network (Figure 1.5).
+Communications Security
+In the context of network security, communications security deals with the protec-
+tion of communications through the network, including measures to protect against
+both passive and active attacks (Figure 1.3).
+Communications security is primarily implemented using network protocols.
+A network protocol consists of the format and procedures that governs the trans-
+mitting and receiving of data between points in a network. A protocol defines the
+structure of the individual data units (e.g., packets) and the control commands that
+manage the data transfer.
+With respect to network security, a security protocol may be an enhancement
+that is part of an existing protocol or a standalone protocol. Examples of the former
+are IPsec, which is part of the Internet Protocol (IP) and IEEE 802.11i, which is
+part of the IEEE 802.11 Wi-Fi standard. Examples of the latter are Transport Layer
+Security (TLS) and Secure Shell (SSH). Part Six examines these and other secure
+network protocols.
+One common characteristic of all of these protocols is that they use a number
+of cryptographic algorithms as part of the mechanism to provide security.
+Device Security
+The other aspect of network security is the protection of network devices, such as
+routers and switches, and end systems connected to the network, such as client sys-
+tems and servers. The primary security concerns are intruders that gain access to
+the system to perform unauthorized actions, insert malicious software (malware), or
+overwhelm system resources to diminish availability. Three types of device security
+are noteworthy:
+```
 
 
 
 Page 17 
 
-mously. It was the first PVC of inde-
-pendent India.
-
-We have come to the end of the
-interview and, as I switch off my
-Dictaphone, the general stands
-before a beautiful oil painting of his
-brother, which hangs on the wall.
-The late Maj Somnath Sharma of D
-Company, 4 Kumaon, is standing in
-his uniform, ribbons on his chest.
-He looks handsome and proud.
-Lt Gen Sharma turns away with a
-distant look in his eyes. ‘Somi died.
-He was not there to die, he was
-there to kill. A job had to be done.
-It was his job and he did it,' he says.
-There is steel in his voice.
-Somi doesn't answer. A half smile
-plays on his lips.
-
-6 mins left in chapter
-7%
+```text
+Network Protocols
+IPsec
+TLS
+1.8/ TRUST AND TRUSTWORTHINESS 37
+HTPPS
+Cryptography
+Keyless
+SSH
+IEEE 802.11i
+S//MIME
+Single-key
+Firewall
+•
+(a) Communications Security
+Intrusion
+detection
+Intrusion
+prevention
+(b) Device Security
+Two-key
+Figure 1.5 Key Elements of Network Security
+■ Firewall: A hardware and/or software capability that limits access between a
+network and devices attached to the network, in accordance with a specific
+security policy. The firewall acts as a filter that permits or denies data traffic,
+both incoming and outgoing, using a set of rules based on traffic content and/
+or traffic pattern.
+■Intrusion detection: Hardware or software products that gather and analyze
+information from various areas within a computer or a network for the pur-
+pose of finding, and providing real-time or near-real-time warning of, attempts
+to access system resources in an unauthorized manner.
+■Intrusion prevention: Hardware or software products designed to detect intru-
+sive activity and attempt to stop the activity, ideally before it reaches its target.
+These device security capabilities are more closely related to the field of
+computer security than network security. Accordingly, they are dealt with more
+briefly than communications security in Part Six. For a more detailed treatment, see
+[STAL18].
+1.8 TRUST AND TRUSTWORTHINESS
+The concepts of trust and trustworthiness are key concepts in computer and network
+security [SCHN91]. It will be useful to look first at a generalized model of trust and
+trustworthiness, and then apply these concepts to the topic of information security.
+```
 
 
 
 Page 18 
 
 ```text
-Maj Somnath Sharma was born on
-31 January 1923, in Jammu. His
-father, Amarnath Sharma, was a
-medical corps officer, who rose to
-the rank of major general. Of his
-two brothers, Surindra Nath, better
-known as Tindy in Army circles,
-went on to become the engineer-
-in-chief. The youngest, Vishwa
-Nath, joined the armoured corps
-and went on to become the Chief
-of Army Staff in 1988. Of his two
-sisters, Kamla joined the Army as a
-doctor and married an Army officer,
-who also rose to the rank of Major
-General; the other, Manorama, also
-married a brigadier in the Army.
-When Tindy was four years old,
-his father was detailed to do a med-
-ical course in England and decided
-to take his wife along. Somi and
-Tindy, who were about one year
-apart, were put in Hampton Court
-5 mins left in chapter
-7%
+38 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+A Trust Model
+One of the most widely accepted and most cited definitions of trust in the organi-
+zational science literature is from [MAYE95], which defines trust as follows: the
+willingness of a party to be vulnerable to the actions of another party based on the
+expectation that the other will perform a particular action important to the truster,
+irrespective of the ability to monitor or control that other party.
+Three related concepts are relevant to a trust model:
+■ Trustworthiness: A characteristic of an entity that reflects the degree to which
+that entity is deserving of trust.
+■Propensity to trust: A tendency to be willing to trust others across a broad
+spectrum of situations and trust targets. This suggests that every individual has
+some baseline level of trust that will influence the person's willingness to rely
+on the words and actions of others.
+■ Risk: A measure of the extent to which an entity is threatened by a poten-
+tial circumstance or event, and typically a function of 1) the adverse impacts
+that would arise if the circumstance or event occurs; and 2) the likelihood of
+occurrence.
+Figure 1.6, adapted from [MAYE95], illustrates the relationship among these
+concepts. Trust is a function of the truster's propensity to trust and the perceived
+trustworthiness of the trustee. Propensity can also be expressed as the level of risk
+that an entity (individual or organization) is prepared to tolerate.
+Typically, a truster uses a number of factors to establish the trustworthiness of
+an entity. Three general factors are commonly cited:
+■Ability: Also referred to as competence, this relates to the potential ability of
+the evaluated entity to do a given task or be entrusted with given information.
+■ Benevolence: This implies a disposition of goodwill towards the trusting party.
+That is, a trustworthy party does not intend to cause harm to the trusting party.
+■Integrity: This can be defined as the truster's perception that the trustee
+adheres to a set of principles that the truster finds acceptable. Integrity implies
+that a benevolent party takes such measures are necessary to assure that it in
+fact does not cause harm to the trusting party.
+The goal of trust, in the model of Figure 1.6, is to determine what course of
+action, if any, the trusting party is willing to take in relation to the trusted party.
+Based on the level of trust, and the perceived risk, the trusting party may decide to
+take some action that involves some degree of risk taking. The outcome of the risk
+taking could be a reliance on the trusted party to perform some action or the disclo-
+sure of information to the trusted party with the expectation that the information
+will be protected as agreed between the parties.
+The Trust Model and Information Security
+Trust is confidence that an entity will perform in a way the will not prejudice the
+security of the user of the system of which that entity is a part. Trust is always
+restricted to specific functions or ways of behavior and is meaningful only in the
 ```
 
 
 
 Page 19 
 
-Convent in Mussoorie. Though Somi
-was older, they were put in the
-same class and made a good team.
-The two remained boarders there,
-happy to be in the same dormitory.
-'We got kicked around by seniors,
-but Somi was my protector because
-he was tougher and bigger than me,
-' remembers Tindy. I was the brains
-behind the pair, I was very good at
-math, and he was more into out-
-door stuff. Other than history and
-general knowledge, Somi was just
-not interested in studies.'
-The deal between the brothers
-was that while Somi would pro-
-tect Tindy from the bullies, Tindy
-would finish all the homework in
-the evening so that Somi could get
-up early and copy it. Both went on
-to study at Sherwood from where
-Somi, who always wanted to join
-the Army, applied for admission to
-4 mins left in chapter
-7%
+```text
+1.8/ TRUST AND TRUSTWORTHINESS 39
+Factors of perceived
+trustworthiness
+Perceived risk
+Ability
+Outcomes
+Reliance
+Benevolence
+Trust
+Risk taking in
+relationship
+Disclosure
+Integrity
+Truster's
+propensity
+Figure 1.6 Trust Model
+context of a security policy. Generally, an entity is said to trust a second entity when
+the first entity assumes that the second entity will behave exactly as the first entity
+expects. This trust may apply only for some specific function. In this context, the
+term entity may refer to a single hardware component or software module, a piece
+of equipment identified by make and model, a site or location, or an organization.
+TRUSTWORTHINESS OF AN INDIVIDUAL Organizations need to be concerned about both
+internal users (employees, on-site contractors) and external users (customers, suppli-
+ers) of their information systems. With respect to internal users, an organization de-
+velops a level of trust in individuals by policies in the following two areas [STAL19]:
+■ Human resource security: Sound security practice dictates that information
+security requirements be embedded into each stage of the employment life
+cycle, specifying security-related actions required during the induction of each
+individual, their ongoing management, and termination of their employment.
+Human resource security also includes assigning ownership of information
+(including responsibility for its protection) to capable individuals and obtain-
+ing confirmation of their understanding and acceptance.
+■ Security awareness and training: This area refers to disseminating security
+information to all employees, including IT staff, IT security staff, and manage-
+ment, as well as IT users and other employees. A workforce that has a high
+level of security awareness and appropriate security training for each indi-
+vidual's role is as important, if not more important, than any other security
+countermeasure or control.
+For external users, trust will depend on the context. In general terms, the fac-
+tors of perceived trustworthiness and the truster's propensity, as depicted in Figure 1.6,
+determine the level of trust. Further, the issue of trust is mutual. That is, not only must
+an organization determine a level of trust towards external users, but external users
+```
 
 
 
 Page 20 
 
 ```text
-the Prince of Wales's Royal Indian
-Military College (now Rashtriya In-
-dian Military College), Dehradun.
-After passing out in May 1941 he
-joined the Indian Military Academy
-(IMA) where he did exceptionally
-well. By then the war had started
-and IMA training was cut short.
-After about nine months of train-
-ing, Somi became a commissioned
-officer in February 1942. He was
-just 19 when he joined the 8/19 Hy-
-derabad Regiment, now 4 Kumaon,
-as a second lieutenant. He faced
-action in Arakan where one of the
-toughest battles of the Burma War
-was fought with the Japanese on the
-Arakan coast where three Indian
-battalions landed, along with one
-battalion of British commandos.
-That was where Somi saw a
-wounded Kumaoni soldier sitting
-against a tree. He asked the man to
-3 mins left in chapter
-7%
+40 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+need to be concerned about the degree to which they can trust an information resource
+that they use. This mutual trust involves a number a practical consequences, including
+the use of a public-key infrastructure and user authentication protocols. These matters
+are explored in Part Five.
+TRUSTWORTHINESS OF AN ORGANIZATION Most organizations rely, to a greater or
+lesser extent, on information system service and information provided by external
+organizations, as well as partnerships to accomplish missions and business functions.
+Examples are cloud service providers and companies that form part of the supply
+chain for the organization. To manage risk to the organization, it must establish
+trust relationships with these external organizations. NIST SP 800-39 (Managing
+Information Security Risk, March 2011) indicates that such trust relationships can be:
+■ Formally established, for example, by documenting the trust-related informa-
+tion in contracts, service-level agreements, statements of work, memoranda of
+agreement/understanding, or interconnection security agreements;
+■ Scalable and inter-organizational or intra-organizational in nature; and/or
+■ Represented by simple (bilateral) relationships between two partners or more
+complex many-to-many relationships among many diverse partners.
+The requirements for establishing and maintaining trust depend on mis-
+sion/business requirements, the participants involved in the trust relationship, the
+criticality/sensitivity of the information being shared or the types of services being
+rendered, the history between the organizations, and the overall risk to the organiza-
+tions participating in the relationship.
+As with individuals, trust related to organizations can involve the use of
+public-key infrastructure and user authentication, as well as the network security
+measures described in Part Six.
+TRUSTWORTHINESS OF INFORMATION SYSTEMS SP 800-39 defines trustworthiness for
+information systems as the degree to which information systems (including the in-
+formation technology products from which the systems are built) can be expected
+to preserve the confidentiality, integrity, and availability of the information being
+processed, stored, or transmitted by the systems across the full range of threats. Two
+factors affecting the trustworthiness of information systems are:
+■ Security functionality: The security features/functions employed within the
+system. These include cryptographic and network security technologies dis-
+cussed throughout this book.
+■ Security assurance: The grounds for confidence that the security functionality
+is effective in its application. This area is addressed by security management
+techniques, such as auditing and incorporating security considerations into the
+system development life cycle [STAL19].
+Establishing Trust Relationships
+The methods used by an organization to establish a trust relationship with various enti-
+ties will depend on a variety of factors, such as laws and regulations, risk tolerance, and the
+criticality and sensitivity of the relationship. SP 800-39 describes the following methods:
 ```
 
 
 
 Page 21 
 
-run but when he replied that he was
-not be able to stand up, the tough
-and battle-hardy Somi carried the
-man on his back, right through
-Japanese crossfire, laughing all
-the way, and bringing him back to
-safety. The two were not shot, possi-
-bly because the Japanese respected
-raw courage.
-Returning to India as a major and
-the adjutant of 4 Kumaon, Somi got
-busy in internal security duties in
-various parts of Punjab and helping
-the police and civil authorities in
-controlling civil disturbances in
-1947. Many educational institu-
-tions in Delhi still talk of his great
-powers of organization in arranging
-supplies of rations and safe move-
-ment of people from one locality to
-another. He was made in charge of
-a flying squad of men with jeeps,
-who would assist the police in con-
-2 mins left in chapter
-7%
+```text
+1.9 / STANDARDS 41
+■ Validated trust: Trust is based on evidence obtained by the trusting organization
+about the trusted organization or entity. The information may include informa-
+tion security policy, security measures, and level of oversight. An example would
+be for one organization to develop an application or information system and pro-
+vide evidence (e.g., security plan, assessment results) to a second organization that
+supports the claims by the first organization that the application/system meets
+certain security requirements and/or addresses the appropriate security controls.
+■Direct historical trust: This type of trust is based on the security-related track
+record exhibited by an organization in the past, particularly in interactions
+with the organization seeking to establish trust.
+■ Mediated trust: Mediated trust involves the use of a third party that is mutu-
+ally trusted by two parties, with the third party providing assurance or guar-
+antee of a given level of trust between the first two parties. An example of
+this form of trust establishment is the use of public-key certificate authorities,
+described in Chapter 14.
+■ Mandated trust: An organization establishes a level of trust with another orga-
+nization based on a specific mandate issued by a third party in a position of
+authority. For example, an organization may be given the responsibility and
+the authority to issue public key certificates for a group of organizations.
+An organization is likely to use a combination of these methods to establish
+relationships with a number of other entities.
+1.9 STANDARDS
+Many of the security techniques and applications described in this book have
+been specified as standards. Additionally, standards have been developed to cover
+management practices and the overall architecture of security mechanisms and
+services. Throughout this book, we describe the most important standards in use
+or being developed for various aspects of cryptography and network security.
+Various organizations have been involved in the development or promotion of
+these standards. The most important (in the current context) of these organiza-
+tions are as follows:
+■ National Institute of Standards and Technology: NIST is a U.S. federal agency
+that deals with measurement science, standards, and technology related to
+U.S. government use and to the promotion of U.S. private-sector innovation.
+Despite its national scope, NIST Federal Information Processing Standards
+(FIPS) and Special Publications (SP) have a worldwide impact.
+■Internet Society: ISOC is a professional membership society with worldwide
+organizational and individual membership. It provides leadership in address-
+ing issues that confront the future of the Internet and is the organization home
+for the groups responsible for Internet infrastructure standards, including the
+Internet Engineering Task Force (IETF) and the Internet Architecture Board
+(IAB). These organizations develop Internet standards and related specifica-
+tions, all of which are published as Requests for Comments (RFCs).
+```
 
 
 
 Page 22 
 
-trolling civil disturbances in Delhi.
-His amicable but firm command
-instilled confidence and discipline
-in many difficult situations.
-The same was tested when
-hostilities broke out in Kashmir in
-1947, and India decided to send her
-troops to save Kashmir from the
-Pakistani raiders. Though Somi's
-left arm was in plaster due to an old
-wrist-fracture suffered doing gym-
-nastics, he insisted on going with
-his company. As he was so keen to
-go, the commanding officer finally
-agreed and ordered him to fly in
-and command two companies of 4
-Kumaon tasked with the protection
-of Srinagar airfield. There are some
-priceless black and white pictures
-of him with his arm in a cast, taken
-at Safdarjung Airport, where he is
-grinning broadly, no doubt happy
-2 mins left in chapter
-8%
+42 CHAPTER 1 / INFORMATION AND NETWORK SECURITY CONCEPTS
+■ ITU-T: The International Telecommunication Union (ITU) is an international
+organization within the United Nations System in which governments and
+the private sector coordinate global telecom networks and services. The ITU
+Telecommunication Standardization Sector (ITU-T) is one of the three sectors of
+the ITU. ITU-T's mission is the development of technical standards covering all
+fields of telecommunications. ITU-T standards are referred to as Recommendations.
+■ ISO: The International Organization for Standardization (ISO) is a worldwide
+federation of national standards bodies from more than 140 countries, one from
+each country. ISO is a nongovernmental organization that promotes the devel-
+opment of standardization and related activities with a view to facilitating the
+international exchange of goods and services and to developing cooperation in
+the spheres of intellectual, scientific, technological, and economic activity. ISO's
+work results in international agreements that are published as International
+Standards.
+1.10 KEY TERMS, REVIEW QUESTIONS, AND PROBLEMS
+Key Terms
+access control
+active attack
+asymmetric encryption
+algorithms
+attack
+authentication
+authentication exchange
+authenticity
+availability
+block cipher
+confidentiality
+cryptographic hash function
+cryptography
+cybersecurity
+data authenticity
+data confidentiality
+data integrity
+data origin authentication
+denial of service
+digital signature algorithms
+eavesdropping
+encryption
+firewall
+information security
+intrusion detection
+intrusion prevention
+key exchange
+keyless algorithm
+man-in-the-middle attack
+masquerade
+message authentication
+code
+network security
+notarization
+OSI security architecture
+passive attack
+peer entity authentication
+privacy
+pseudorandom number
+generator
+replay
+routing control
+security attack
+security mechanism
+security service
+single-key algorithm
+stream cipher
+symmetric encryption
+algorithms
+system integrity
+threat
+trust
+trust relationship
+trustworthiness
+two-key algorithm
+user authentication
+Review Questions
+1.1 What is the OSI security architecture?
+1.2 List and briefly define the three key objectives of computer security.
+1.3 List and briefly define categories of passive and active security attacks.
+1.4 List and briefly define categories of security services.
+1.5 List and briefly define categories of security mechanisms.
+1.6 List and briefly define the fundamental security design principles.
 
 
 
 Page 23 
 
-with the thought of being with his
-men in war.
-When Somi landed in Srinagar in
-late October, the raiders were clos-
-ing in on Baramulla with Badgam
-on route. That was where a bloody
-battle would be fought and the
-brave young officer would bring
-home the first Param Vir Chakra of
-independent India.
-Somi's life story is often quoted
-in books and Army messes. It is a
-tale of sheer courage and glory. The
-example set by him is recounted
-with a lot of respect and he is fondly
-remembered not only by 4 Kumaon
-but the entire armed forces. To en-
-sure that young soldiers continue
-to be inspired by his bravery, the
-training ground at the Kumaon
-Regimental Centre in Ranikhet
-has been named Somnath Sharma
-Ground. A beautiful red brick gate-
-1 min left in chapter
-8%
-
-
-
-Page 24 
-
 ```text
-way called Somnath Dwar leads to
-the perfectly maintained parade
-ground, flanked by the snow-
-capped Himalayas. The ground has
-seen the sweat and toil of thousands
-of young boys, new recruits of the
-Kumaon Regiment and the Naga
-Regiments, who take their first step
-as young soldiers here.
-Sahayak:
-1 min left in chapter
-8%
+1.10 / KEY TERMS, REVIEW QUESTIONS, AND PROBLEMS 43
+1.7 Provide an overview of the three types of cryptographic algorithms.
+1.8 Provide an overview of the two major elements of network security.
+1.9 Briefly explain the concepts of trust and trustworthiness.
+Problems
+1.1 Consider an automated cash deposit machine in which users provide a card or an
+account number to deposit cash. Give examples of confidentiality, integrity, and avail-
+ability requirements associated with the system, and, in each case, indicate the degree
+of importance of the requirement.
+1.2 Repeat Problem 1.1 for a payment gateway system where a user pays for an item using
+their account via the payment gateway.
+1.3 Consider a financial report publishing system used to produce reports for various
+organizations.
+ a. Give an example of a type of publication for which confidentiality of the stored
+ data is the most important requirement.
+ b. Give an example of a type of publication in which data integrity is the most impor-
+ tant requirement.
+ c. Give an example in which system availability is the most important requirement.
+1.4 For each of the following assets, assign a low, moderate, or high impact level for the
+loss of confidentiality, availability, and integrity, respectively. Justify your answers.
+ a. A student maintaining a blog to post public information.
+ b. An examination section of a university that is managing sensitive information
+ about exam papers.
+ c. An information system in a pathological laboratory maintaining the patient's data.
+ d. A student information system used for maintaining student data in a university
+ that contains both personal, academic information and routine administrative
+ information (not privacy related). Assess the impact for the two data sets sepa-
+ rately and the information system as a whole.
+ e. A university library contains a library management system, which controls the
+ distribution of books among the students of various departments. The library
+ management system contains both the student data and the book data. Assess
+ the impact for the two data sets separately and the information system as a whole.
+1.5 It is useful to read some of the classic tutorial papers on computer security; these pro-
+vide a historical perspective from which to appreciate current work and thinking. The
+following are good examples:
+ Browne, P. "Computer Security -A Survey." ACM SIGMIS Database, Fall 1972.
+ LAMP04 Lampson, B. "Computer Security in the Real World," Computer, June 2004.
+ Saltzer, J., and Schroeder, M. "The Protection of Information in Computer
+ Systems." Proceedings of the IEEE, September 1975.
+ Shanker, K. "The Total Computer Security Problem: An Overview." Computer,
+ June 1977.
+ Summers, R. "An Overview of Computer Security." IBM Systems Journal, Vol. 23,
+ No. 4, 1984.
+ Ware, W., ed. Security Controls for Computer Systems. RAND Report 609-1. October
+ 1979.
+Read all of these papers. The papers are available at box.com/Crypto8e. Compose
+a 500-1000 word paper (or 8-12 slide PowerPoint presentation) that summarizes
+the key concepts that emerge from these papers, emphasizing concepts that are
+common to most or all of the papers.
 ```
 
 
